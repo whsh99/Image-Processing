@@ -1,7 +1,7 @@
 # image-processing
 
 編譯環境：
-openjdk-17.0.2
+* openjdk-17.0.2
 
 編譯流程：
 1. cd $(CURRENT_DIRECTORY)
