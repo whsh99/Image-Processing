@@ -80,7 +80,7 @@
 1. 每個像素 $(i, j)$ 的鄰域是一個 $3\times3$ 的矩陣：
 
     ```math
-    {Neighborhood} =
+    \text{Neighborhood} =
     \begin{bmatrix}
     P_{i-1, j-1} & P_{i-1, j} & P_{i-1, j+1} \\
     P_{i, j-1} & P_{i, j} & P_{i, j+1} \\
