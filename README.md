@@ -1,4 +1,5 @@
-# image-processing
+# image-processing![image-processing](https://github.com/user-attachments/assets/53007f87-cb51-4c8b-b905-61479c74d4d8)
+
 ## 程式說明：影像處理應用
 
 使用 Java 實作影像處理程式，具備將原圖以灰階、負片、Gamma校正（Gamma correction）、對比拉伸（Contrast stretch）、椒鹽雜訊（Salt-and-pepper noise）、$3\times3$ 中值濾波器（Median filter）、拉普拉斯運算子（Laplace operator, Laplacian）、$3\times3$ 平均值濾波器（Average filter）和 Otsu 二值化（Otsu's method）等等常見影像處理方法。
