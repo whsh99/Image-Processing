@@ -193,7 +193,7 @@ if(random.nextFloat() > rt) {
 
 3. 另存為 `lenna-median.bmp`。
 
-#### 6. **Laplacian()－拉普拉斯轉換**
+#### 6. **Laplacian()－拉普拉斯邊緣偵測**
 
 > 檢測並強化（偵測）影像邊緣。
 
