@@ -4,8 +4,6 @@
 
 使用 Java 實作影像處理程式，具備將原圖以灰階、負片、Gamma校正（Gamma correction）、對比拉伸（Contrast stretch）、椒鹽雜訊（Salt-and-pepper noise）、 3×3 中值濾波器（Median filter）、拉普拉斯運算子（Laplace operator, Laplacian）、3×3 平均值濾波器（Average filter）和 Otsu 二值化（Otsu's method）等等常見影像處理方法。
 
----
-
 ## II. 所需函式庫：
 
 * `java.awt.image.BufferedImage`: 用來存取、儲存和處理圖片像素。
@@ -14,8 +12,6 @@
 * `javax.imageio.ImageIO`: 提供讀取與寫入圖片檔案的方法。
 * `java.util.Arrays`: 提供操作陣列的方法（例如：排序）。
 * `java.util.Random`: 提供生成隨機數的方法（模擬椒鹽雜訊時使用）。
-
----
 
 ## III. 程式功能：
 
@@ -27,8 +23,6 @@
 * `Laplacian()`: 使用拉普拉斯運算子（Laplace operator, Laplacian）檢測圖片邊緣。
 * `Max()`: 使用 3×3 的最大值濾波器（Max filter）強化亮點。
 * `Otsu()`: 使用 Otsu（大津）方法將圖片進行二值化（Binarization）。
-
----
 
 ## IV. 實作方法說明：
 
@@ -102,8 +96,6 @@ ImageIO.write(img_new, "bmp", out_f);    // 存成 BMP 檔案
 
 2. 另存為 `lenna-grayscale.bmp`。
 
----
-
 #### 2. **Negative()－負片效果**
 
 > 反轉灰階圖片的顏色以生成負片。
@@ -115,8 +107,6 @@ ImageIO.write(img_new, "bmp", out_f);    // 存成 BMP 檔案
     ```
 
 2. 另存為 `lenna-negative.bmp`。
-
----
 
 #### 3. **Contrast()－伽瑪校正**
 
@@ -144,8 +134,6 @@ ImageIO.write(img_new, "bmp", out_f);    // 存成 BMP 檔案
     * gamma > 1 ➝ `lenna-gamma-abv.bmp`
     * gamma < 1 ➝ `lenna-gamma-bel.bmp`
 
----
-
 #### 4. **SaltnPepper()－椒鹽雜訊**
 
 > 添加隨機的黑白點模擬椒鹽雜訊。
@@ -170,8 +158,6 @@ if(random.nextFloat() > rt) {
 ```
 
 3. 另存為 `lenna-saltnpepper.bmp`。
-
----
 
 #### 5. **Median()－中值濾波器**
 
@@ -206,8 +192,6 @@ if(random.nextFloat() > rt) {
     ```
 
 3. 另存為 `lenna-median.bmp`。
-
----
 
 #### 6. **Laplacian()－拉普拉斯轉換**
 
@@ -246,8 +230,6 @@ if(random.nextFloat() > rt) {
     
 3. 另存為 `lenna-laplacian.bmp`。
 
----
-
 #### 7. **Max()－最大值濾波器**
 
 > 使用 3×3 的最大值濾波器去除圖片中的低頻暗點雜訊（高頻亮點雜訊會被強化）。
@@ -284,8 +266,6 @@ if(random.nextFloat() > rt) {
 
 4. 另存為 `lenna-max.bmp`。
 
----
-
 #### 8. **Otsu()－Otsu 二值化**
 
 > 根據 Otsu 方法將灰階圖片二值化。
@@ -311,8 +291,6 @@ if(random.nextFloat() > rt) {
     ```
     
 4. 另存為 `lenna-otsu.bmp`。
-
----
 
 ## V. 安裝與使用
 
