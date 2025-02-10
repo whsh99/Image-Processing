@@ -4,6 +4,8 @@
 
 使用 Java 實作影像處理程式，具備將原圖以灰階、負片、Gamma校正（Gamma correction）、對比拉伸（Contrast stretch）、椒鹽雜訊（Salt-and-pepper noise）、 3×3 中值濾波器（Median filter）、拉普拉斯運算子（Laplace operator, Laplacian）、3×3 平均值濾波器（Average filter）和 Otsu 二值化（Otsu's method）等等常見影像處理方法。
 
+---
+
 ## II. 所需函式庫：
 
 * `java.awt.image.BufferedImage`: 用來存取、儲存和處理圖片像素。
@@ -12,6 +14,8 @@
 * `javax.imageio.ImageIO`: 提供讀取與寫入圖片檔案的方法。
 * `java.util.Arrays`: 提供操作陣列的方法（例如：排序）。
 * `java.util.Random`: 提供生成隨機數的方法（模擬椒鹽雜訊時使用）。
+
+---
 
 ## III. 程式功能：
 
@@ -24,7 +28,9 @@
 * `Max()`: 使用 3×3 的最大值濾波器（Max filter）強化亮點。
 * `Otsu()`: 使用 Otsu（大津）方法將圖片進行二值化（Binarization）。
 
-## III. 實作方法說明：
+---
+
+## IV. 實作方法說明：
 
 ### i. 圖片檔案 I/O
 
@@ -308,7 +314,7 @@ if(random.nextFloat() > rt) {
 
 ---
 
-## IV. 安裝與使用
+## V. 安裝與使用
 
 * 系統需求
 1. Java 8 或以上版本。
